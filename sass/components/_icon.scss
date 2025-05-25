@@ -1,0 +1,7 @@
+@use '../abstracts' as *;
+
+.icon {
+    width: $rounded-icon-size;
+    height: $rounded-icon-size;
+    object-fit: cover;
+}

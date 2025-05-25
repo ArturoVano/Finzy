@@ -1,0 +1,20 @@
+{
+  "name": "finzy",
+  "version": "1.0.0",
+  "description": "Finance app",
+  "main": "index.js",
+  "scripts": {
+    "watch:sass": "sass --watch sass/main.scss css/style.css",
+    "devserver": "live-server --browser=chrome",
+    "start": "npm-run-all --parallel devserver watch:sass"
+  },
+  "author": "Arturo",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.89.0"
+  },
+  "dependencies": {
+    "live-server": "^1.2.2",
+    "npm-run-all": "^4.1.5"
+  }
+}

@@ -1,0 +1,27 @@
+@use '../abstracts' as *;
+
+%heading {
+    font-weight: 400;
+    color: $color-primary;
+}
+
+.heading-1 {
+    @extend %heading;
+}
+
+.heading-2 {
+    @extend %heading;
+    font-size: size(24);
+}
+
+
+.heading-3 {
+    @extend %heading;
+    font-size: size(18);
+}
+
+.caption {
+    font-size: size(12);
+    font-weight: 300;
+    color: $color-tertiary;
+}

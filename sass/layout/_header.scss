@@ -1,0 +1,22 @@
+@use '../abstracts' as *;
+
+.header {
+    width: 100%;
+    min-width: min-content;
+    height: size(100);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: size(20);
+
+    &__logo {
+        height: size(125);
+        width: size(125);
+        margin: 0 size(27);
+        cursor: pointer;
+    }
+
+    &__welcome {
+        display: none;
+    }
+}

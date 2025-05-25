@@ -1,0 +1,47 @@
+@use '../abstracts' as *;
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: 400;
+    box-sizing: border-box;
+    background-color: $primary-background;
+    color: $color-primary;
+}
+
+.balances {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: size(15);
+
+    & > * {
+        border: $border;
+        border-radius: $border-radius;
+        padding: size(23);
+    }
+}
+
+
+
+.goals {
+    grid-area: 3 / 1 / 6 / 2;
+    background-color: orange;
+}
+
+.dashboard {
+    grid-area: 3 / 2 / 6 / 4;
+    background-color: brown;
+}
+
+.others {
+    grid-area: 4 / 4 / 6 / 5;
+    background-color: chocolate;
+}

@@ -1,0 +1,68 @@
+@use '../abstracts' as *;
+
+.search {
+    width: 20%;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+    padding: 0 size(14);
+
+    border: $border;
+    border-radius: $border-radius;
+    transition: all .2s;
+
+    &:focus-within {
+        width: 25%;
+        background-color: hsla(0, 0%, 50%, 0.25);
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.21);
+
+    }
+
+    &:hover {
+        border: $border-hover;
+
+        .search__button {
+            transform: translateY(-8%);
+        }
+
+        .search__icon {
+            fill: white;
+        }
+    }
+
+    &__input {
+        flex: 1;
+        font-family: inherit;
+        font-size: inherit;
+        height: size(55);
+        background: none;
+        border: none;
+        width: 80%;
+        color: $color-primary;
+
+        &:focus {
+            outline: none; 
+        }
+
+        &::-webkit-search-cancel-button {
+            -webkit-appearance: none; 
+        }
+    }
+
+    &__button {
+        height: size(32);
+        width: size(32);
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        transition: transform .25s;
+    }
+
+    &__icon {
+        height: inherit;
+        width: inherit;
+        fill: lightgray;
+    }
+}

@@ -1,0 +1,15 @@
+@use './functions' as *;
+$primary-background: rgba(8, 10, 25, 0.94);
+$secondary-background: rgba(255, 255, 255, 0.1);
+$tertiary-background: rgba(13, 13, 13, 0.85);
+$quaternary-background: rgba(17, 17, 27, 0.93);
+
+$color-primary:  rgba(255, 255, 255, 0.85);
+$color-secondary: rgba(255, 255, 255, 0.203);
+$color-tertiary: #6B7280;
+
+$border: 1.5px solid grey;
+$border-hover: 1.5px solid lightgray;
+$border-radius: 15px;
+
+$rounded-icon-size: size(45);

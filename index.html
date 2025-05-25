@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Finzy</title>
+    <link rel="icon" href="assets/img/tab-icon.png">
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img src="assets/img/logo.png" alt="Fincy logo" class="header__logo">
+      <div class="header__welcome">
+        <h1 class="heading-1">Gestión financiera inteligente</h1>
+      </div>
+
+      <form action="#" class="search">
+        <button class="search__button">
+          <svg class="search__icon">
+            <use xlink:href="assets/img/sprite.svg#icon-search"></use>
+          </svg>
+        </button>
+        <input type="search" class="search__input" placeholder="Buscar">
+      </form>
+
+      <div class="user-nav">
+        <button class="user-nav__notification">
+          <svg class="user-nav__icon">
+            <use xlink:href="assets/img/sprite.svg#icon-bell"></use>
+          </svg>
+        </button>
+        <div class="user-nav__user">
+          <img src="assets/img/avatar.png" alt="User photo" class="user-nav__user-photo">
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="balances">
+				<div class="recent-spendings">
+          <div class="card__heading">
+            <h2 class="heading-2">Recent Spendings</h2>
+            <button class="btn">View All</button>
+          </div>
+
+          <div class="card__entry">
+            <div class="card__general">
+              <img class="icon" src="./assets/img/coffee.png" alt="Expense image" />
+              <h3 class="heading-3">Coffee & Cake</h3>
+              <p class="caption">May 20, 17:23</p>
+            </div>
+            <div class="card__cost">
+              <h3 class="heading-3">-10.00€</h3>
+              <p class="caption">whims</p>
+            </div>
+          </div>
+          <div class="card__entry">
+            <div class="card__general">
+              <img class="icon" src="./assets/img/cothes.png" alt="Expense image" />
+              <h3 class="heading-3">Shoping clothes</h3>
+              <p class="caption">May 17, 18:23</p>
+            </div>
+            <div class="card__cost">
+              <h3 class="heading-3">-36.95€</h3>
+              <p class="caption">clothes</p>
+            </div>
+          </div>
+          <div class="card__entry">
+            <div class="card__general">
+              <img class="icon" src="./assets/img/mercadona.png" alt="Expense image" />
+              <h3 class="heading-3">Supermarket</h3>
+              <p class="caption">May 16, 17:43</p>
+            </div>
+            <div class="card__cost">
+              <h3 class="heading-3">-167.95€</h3>
+              <p class="caption">Weekly shopping</p>
+            </div>
+          </div>
+          <div class="card__entry">
+            <div class="card__general">
+              <img class="icon" src="./assets/img/snacks.png" alt="Expense image" />
+              <h3 class="heading-3">Snacks</h3>
+              <p class="caption">May 15, 14:30</p>
+            </div>
+            <div class="card__cost">
+              <h3 class="heading-3">-6.00€</h3>
+              <p class="caption">whims</p>
+            </div>
+          </div>
+        </div>
+
+				<div class="main-balance">      
+				</div>
+
+        <div class="investments">
+
+          <div class="card__heading">
+            <h2 class="heading-2">My investments</h2>
+            <button class="btn">View All</button>
+          </div>
+
+          <div class="card__entry">
+            <div class="card__general">
+              <img class="icon" src="./assets/img/my-investor.png" alt="Invest image" />
+              <h3 class="heading-3">MyInvestor Nasdaq 100</h3>
+              <p class="caption">Jun 16, 8:15</p>
+            </div>
+            <div class="card__details">
+              <h3 class="heading-3">129.99€</h3>
+              <p class="caption">+13.5%</p>
+            </div>
+          </div>
+
+          <div class="card__entry">
+            <div class="card__general">
+              <img class="icon" src="./assets/img/my-investor.png" alt="Invest image" />
+              <h3 class="heading-3">Vanguard U.S. 500 Stock Index </h3>
+              <p class="caption">Jun 16, 8:15</p>
+            </div>
+            <div class="card__details">
+              <h3 class="heading-3">129.99€</h3>
+              <p class="caption">+13.5%</p>
+            </div>
+          </div>
+
+          <div class="card__entry">
+            <div class="card__general">
+              <img class="icon" src="./assets/img/my-investor.png" alt="Invest image" />
+              <h3 class="heading-3">Vanguard Global Stock Index Fund EURs</h3>
+              <p class="caption">Jun 16, 8:15</p>
+            </div>
+            <div class="card__details">
+              <h3 class="heading-3">129.99€</h3>
+              <p class="caption">+13.5%</p>
+            </div>
+          </div>
+
+          <div class="card__entry">
+            <div class="card__general">
+              <img class="icon" src="./assets/img/my-investor.png" alt="Invest image" />
+              <h3 class="heading-3">Vanguard European Stock Index Fund</h3>
+              <p class="caption">Jun 16, 8:15</p>
+            </div>
+            <div class="card__details">
+              <h3 class="heading-3">129.99€</h3>
+              <p class="caption">+13.5%</p>
+            </div>
+          </div>
+
+          <div class="card__entry">
+            <div class="card__general">
+              <img class="icon" src="./assets/img/my-investor.png" alt="Invest image" />
+              <h3 class="heading-3">Global X MSCI Argentina</h3>
+              <p class="caption">Jun 16, 8:15</p>
+            </div>
+            <div class="card__details">
+              <h3 class="heading-3">129.99€</h3>
+              <p class="caption">+13.5%</p>
+            </div>
+          </div>
+
+          <div class="card__entry">
+            <div class="card__general">
+              <img class="icon" src="./assets/img/my-investor.png" alt="Invest image" />
+              <h3 class="heading-3">Bitcoin</h3>
+              <p class="caption">Jun 16, 8:15</p>
+            </div>
+            <div class="card__details">
+              <h3 class="heading-3">129.99€</h3>
+              <p class="caption">+13.5%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="goals"></div>
+
+        <div class="dashboard"></div>
+
+        <div class="others"></div>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

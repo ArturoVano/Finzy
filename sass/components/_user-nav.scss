@@ -1,0 +1,50 @@
+@use '../abstracts' as *;
+
+.user-nav {
+    display: flex;
+    gap: size(20);
+    margin: 0 size(27);
+
+    & > * {
+        height: size(55);
+        width: size(55);
+        border-radius: $border-radius;
+    }
+
+    &__notification {
+        border: $border;
+        position: relative;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:hover {
+            border: $border-hover;
+
+            .user-nav__icon {
+                transform: translate(-50%, -58%);
+                fill: white;
+            }
+        }
+
+        &:active {
+            background-color: hsla(0, 0%, 50%, 0.25);
+        }
+    }
+
+    &__icon {
+        height: size(30);
+        width: size(30);
+        fill: lightgray;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-51%, -50%);
+        transition: transform .25s;
+    }
+
+    &__user-photo {
+        height: inherit;
+        width: inherit;
+        border-radius: 25%;
+    }
+}
