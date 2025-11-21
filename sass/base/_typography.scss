@@ -24,4 +24,12 @@
     font-size: size(12);
     font-weight: 300;
     color: $color-tertiary;
+
+    &--green {
+        color: #4CAF50;
+    }
+
+    &--red {
+        color: #F44336;
+    }
 }
